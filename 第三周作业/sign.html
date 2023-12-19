@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .backgroud{
+            background-image: url(backgroud.png);
+            background-repeat: no-repeat;
+            height: 1060px;
+            left: 100px;
+            text-align: center;
+            background-position-x: center;
+            position: relative;
+            display: flex;
+        }
+        .head{
+            position: relative;
+            height: 90px;
+            width: 600px;
+            right: 16.5%;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            position: relative;
+            top: 10px;
+            height: 30px;
+            width: 50px;
+            left: 40px;
+            justify-content: space-between;
+        }
+        #sign{
+            font:  700 30px "微软雅黑";
+            color: gainsboro; 
+        }
+        .photo{
+            position: relative;
+            top: 90px;
+            height: 200px;
+            width: 600px;
+            right: 38%;
+            text-align: center;
+        }
+        span{
+            display: inline-block;
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            top: 100px;
+            right: 62px;
+            color: gainsboro;
+            font-size: 25px;
+        }
+        #photo{
+            position: absolute;
+            right:23px;
+
+        }
+        .plus{
+            position: absolute;
+            top: 37px;
+            right: 23px;
+        }
+        .word{
+            position: relative;
+            top: 290px;
+            width: 600px;
+            height: 450px;
+            right: 62%;
+            display: flex;
+            flex-direction: column;
+        }
+        .box2{
+            position: relative;
+            width: 600px;
+            height: 150px;
+            right: 70%;
+            top: -50px;
+        }
+        #green{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            color: green;
+            font-weight: 400;
+            left: 800px;
+        }
+        .sign_up{
+            position: relative;
+            top: 750px;
+            width: 600px;
+            height: 150px;
+            right: 105%;
+        }
+        .s_up{
+            color: rgb(168, 85, 223);
+            position: absolute;
+            top: 15px;
+            left: 40%;
+            font-weight: 700;
+        }
+        .last{
+            position: relative;
+            top: 900px;
+            width: 600px;
+            height: 50px;
+            right: 117%;
+        }
+        #first{
+            position: absolute;
+            top: 10px;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        #second{
+            position: absolute;
+            top: 10px;
+            right: -60px;
+            font-weight: 400;
+            font-size: 15px;
+            color: rgb(92, 199, 92);
+        }
+    </style>
+</head>
+<body>
+    <div class="backgroud"><img src="rain.png" />
+        <div class="head">
+        <div class="box">
+            <img src="i.png"/>
+        </div>
+        <div class="box" style="width:420px;" id="sign">sign up</div>
+        <div class="box">
+            <img src="roud.png"/>
+        </div>
+        </div>
+        <div class="photo">
+            <img src="groud.png"/>
+            <span id="photo">photo</span>
+            <span class="plus">
+                <img src="plus.png"/>
+            </span>
+        </div>
+        <div class="word">
+            <div class="box2">
+                <span>First&nbsp;Name<img src="line.png" /></span>
+            </div>
+            <div class="box2">
+                <span>Last&nbsp;Name<img src="line.png" /></span>
+            </div>
+            <div class="box2">
+                <span>Email&nbsp;Address<img src="line.png" /></span>
+            </div>
+            <div class="box2">
+                <span>Password</span><span id="green">show</span>
+            </div>
+        </div>
+        <div class="sign_up">
+            <img src="sign.png"/>
+            <span class="s_up">sign&nbsp;up</span>
+        </div>
+        <div class="last">
+            <span id="first">Allready&nbsp;a&nbsp;number?</span>
+            <span id="second">Sign&nbsp;In</span>
+        </div>
+    </div>
+</body>
+</html>

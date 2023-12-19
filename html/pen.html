@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .header{
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background-image: url(The\ best\ pen\ is\ \ just\ LAMY.png);
+        }
+        .header_flex{
+            width: 1000px;
+            height: 75px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box{
+            position: relative;
+            background-color: black;
+            width: 150px;
+            height: 45px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .second{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            height: 450px;
+            background-color: gainsboro;
+        }
+        .welcome{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 40px;
+
+            height: 500px;
+            width: 1000px;
+            left: 15%;
+        }
+        .welcome_picture{
+            width: 400px;
+            height: 500px;
+        }
+        .welcome_word{
+            width: 600px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .title{
+            position: relative;
+            top: 40px;
+            height:100px;
+            width: 570px;
+            left: 70px;
+        }
+        .document{
+            position: relative;
+            top: 100px;
+            height: 500px;
+            width: 570px;
+            left: 25px;
+        }
+        .vedio{
+            position: absolute;
+            left: 40px;
+            bottom: -30px;
+            width: 350px;
+            height: 230px;
+        }
+        .LAMY{
+            position: relative;
+            width:100%;
+            height: 600px;
+            top: 150px;
+            display: flex;
+            flex-direction: column;
+        }
+        .lamy_pic{
+            position: relative;
+            top: 50px;
+            width: 300px;
+            left:38%;
+            height: 80px;
+        }
+        .button{
+            position: relative;
+            top: 650px;
+            width: 250px;
+            left: 50%;
+            height: 50px;
+            background-color: red;
+        }
+        .there{
+            position: relative;
+            top: 100px;
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            left:9%;
+            height: 300px;
+        }
+        .pic{
+            position: relative;
+            width: 440px;
+            height: 300px;
+        }
+        .t_pen{
+            position: relative;
+            top: 15px;
+            width: 100%;
+            height: 300px;
+            background-color:rgb(233, 225, 225);
+        }
+        .pen{
+            position: relative;
+            top: 30px;
+            left: 14%;
+            height: 300px;
+            width: 1000px;
+        }
+        .gray_back{
+            width: 100%;
+            height: 350px;
+            position: relative;
+            top: 15px;
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+        }
+        .gray_word{
+            width: 500px;
+            height: 150px;
+            top: 5px;
+            position: relative;
+            left: 40%;
+            font-size: 25px;
+            font-family: "宋体";
+            font-weight: 900;
+            color: lightcyan;
+        }
+        .gray_pic{
+            width: 700px;
+            height: 300px;
+            position: relative;
+            top: 10px;
+            display: flex;
+            flex-direction: column;
+            left: 23%;
+        }
+        .pic_head{
+            width: 70px;
+            height: 70px;
+            position: relative;
+            top: 20px;
+            left: 46%;
+        }
+        .pic_word{
+            width: 600px;
+            height: 75px;
+            position: relative;
+            top: 30px;
+            left: 8%;
+        }
+        .pic_line{
+            width: 600px;
+            height: 30px;
+            position: relative;
+            left: 30%;
+            top: 35px;
+        }
+        .mix{
+            width: 100%;
+            height: 1000px;
+            position: relative;
+            top: 70px;
+            display: flex;
+            flex-direction: column;
+        }
+        .mix_word{
+            width: 400px;
+            height: 100px;
+            position: relative;
+            top: 100px;
+            left: 34%;
+            text-align: center;
+            font-size: 25px;
+            font-family: "微软雅黑";
+        }
+        .mix_pic{
+            position: relative;
+            width: 900px;
+            height: 600px;
+            top: 150px;
+            left: 20%;
+        }
+        .mix_button{
+            position: relative;
+            width: 300px;
+            height: 70px;
+            top: 270px;
+            left: 45%;
+        }
+        .pen_gra{
+            position: relative;
+            width: 100%;
+            height: 350px;
+            top: 120px;
+            background-color: gray;
+        }
+        .p_gra{
+            position: relative;
+            top: 100px;
+            width: 830px;
+            height: 350px;
+            left: 19%;
+            background-color:white;
+        }
+        .white_back{
+            position: relative;
+            top: 300px;
+            width: 100%;
+            height: 200px;
+
+        }
+        .white_new{
+            position: relative;
+            top: 100px;
+            height: 50px;
+            width: 200px;
+            left: 40%;
+
+        }
+        .last{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            top: 250px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_flex">
+            <div class="box">新品推荐</div>
+            <div class="box">在线购买产品</div>
+            <divclass="box" style="width: 250px;height: 65px;background-color: red;"> <img src="img_lamylogo.png"/></div>
+            <div class="box">企业礼包</div>
+            <div class="box">品牌介绍</div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="welcome">
+            <div class="welcome_picture">
+                <img src="penw.png"/>
+            </div>
+            <div class="welcome_word">
+                <div class="title">
+                    <img src="Welcome to Lamy.png"/>
+                </div>
+                <div class="document">
+                    <img src="C•Josef Lamy.png"/>
+                </div>
+                <div class="vedio">
+                    <img src="vedio.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="LAMY">
+        <div class="lamy_pic">
+            <img src="LAMY.png"/>
+        </div>
+        <div class="there">
+            <div class="pic">
+                <img src="star.png"/>
+            </div>
+            <div class="pic">
+                <img src="hunting.png"/>
+            </div>
+            <div class="pic">
+                <img src="happy.png"/>
+            </div>
+        </div>
+        <div class="bottun"></div>    
+    </div>
+    <div class="t_pen">
+        <div class="pen">
+            <img src="pen.png"/>
+        </div>           
+    </div>
+    <div class="gray_back">
+        <div class="gray_word">
+            <img src="Form Germany.png" />
+            <br /><br />What people are saying?
+        </div>
+        <div class="gray_pic">
+            <div class="pic_head">
+                <img src="head.png"/>
+            </div>
+            <div class="pic_word">
+                <img src="pic_word.png"/>
+            </div>
+            <div class="pic_line">
+                <img src="line.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="mix">
+        <div class="mix_word">
+            <img src="Choose.png"/>
+            <br /><br />Our products </div>
+        <div class="mix_pic">
+            <table border="0" width="900px" height="600px">
+                <tr>
+                    <td >
+                        <img src="p1.png"/>
+                    </td>
+                    <td rowspan="2">
+                        <img src="p2.png" />
+                    </td>
+                    <td >
+                        <img src="p3.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <img src="p4.png" />
+                    </td>
+                    <!--shanchu-->
+                    <td >
+                        <img src="p6.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <!--shanchu-->
+                    <td><img src="p5.png" /></td>
+                    <!--shanchu-->
+                </tr>
+            </table>
+        </div>
+        <div class="mix_button">
+            <img src="arrow-double-right.png"/>
+        </div>
+    </div>
+    <div class="pen_gra">
+        <div class="p_gra">
+            <table border="0" width="700px" height="350px">
+                <tr>
+                    <td>
+                        <img src="pic1.png"/>
+                    </td>
+                    <td>
+                        <img src="pic2.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="pic3.png" />
+                    </td>
+                    <td>
+                        <img src="pic4.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="pic5.png" />
+                    </td>
+                    <td>
+                        <img src="pic6.png" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="white_back">
+        <div class="white_new">
+            <img src="arrow-double-right 2.png"/>
+        </div>
+    </div>
+    <div class="last">
+        <img src="CUTE useful.png"/>
+    </div>
+
+</body>
+</html>
